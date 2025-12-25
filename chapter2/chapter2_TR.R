@@ -2,24 +2,24 @@
 install.packages("difR")
 library(difR)
 
-# veri setini içe aktarma
+# veri setini i√ße aktarma
 library(readr)
 dataDIF <- read_csv("dataDIF.csv")
 View(dataDIF)
 
-# 1. Angoff'un DMG yöntemi
+# 1. Angoff'un DMG y√∂ntemi
 TIDStats <- difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1)
 TIDStats
 
 ## orijinal grafik
 plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1))
 
-## kitaptaki grafi€in oluﬂturulmas›
-### x ve y eksenlerindeki de€erlerin belirlenmesi
+## kitaptaki grafiƒüin olu≈üturulmasƒ±
+### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 perp <- TIDStats$Dist 
 items <- 1:20
-### grafi€in çizdirilmesi
-plot(items, perp, ylim = c(-3, 3), xaxt = "n", ylab = "Dik Uzakl›klar", xlab = "Maddeler",
+### grafiƒüin √ßizdirilmesi
+plot(items, perp, ylim = c(-3, 3), xaxt = "n", ylab = "Dik Uzakl√ùklar", xlab = "Maddeler",
      col = ifelse(1:20 == 2 | 1:20 == 16 | 1:20 == 18 | 1:20 == 19, "red", "black"))
 abline(h = -1.5, col = "blue") 
 abline(h = 1.5, col = "blue") 
@@ -35,18 +35,18 @@ plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1), plot 
 ## kitaptaki grafik
 plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1), plot = "delta", xlab = "Referans Grup", ylab = "Odak Grup")
 
-## üç farkl› saflaﬂt›rma yöntemine göre analizlerin gerçekleﬂtirilmesi
+## √º√ß farklƒ± safla≈ütƒ±rma y√∂ntemine g√∂re analizlerin ger√ßekle≈ütirilmesi
 TIDStats_IPP1 <- difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP1")
 TIDStats_IPP2 <- difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP2", thrTID = "norm")
 TIDStats_IPP3 <- difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP3", thrTID = "norm")
 
-## üç farkl› saflaﬂt›rma yönteminin orijinal grafikleri
+## √º√ß farklƒ± safla≈ütƒ±rma y√∂nteminin orijinal grafikleri
 par(mfcol = c(3, 1))
 plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP1"), plot = "delta")
 plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP2", thrTID = "norm"), plot = "delta")
 plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP3", thrTID = "norm"), plot = "delta")
 
-# kitaptaki grafikler (üç farkl› saflaﬂt›rma yöntemi için)
+# kitaptaki grafikler (√º√ß farklƒ± safla≈ütƒ±rma y√∂ntemi i√ßin)
 par(mfcol = c(3, 1))
 plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = T, purType = "IPP1"), plot = "delta",
      xlab = "Referans Grup", ylab = "Odak Grup")
@@ -58,33 +58,33 @@ plot(difTID(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify
 dev.off()
 
 # 2. Breslow-Day
-## homojen iliﬂkinin testi (Aguerri vd, 2009)
+## homojen ili≈ükinin testi (Aguerri vd, 2009)
 BDStats_Aguerri <- difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1)
 
 ### orijinal grafik
 plot(difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1))
 
 ### kitaptaki grafik
-#### x ve y eksenlerindeki de€erlerin belirlenmesi
+#### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 BDStats <- BDStats_Aguerri$BD[, 1]
 items <- 1:20
-#### grafi€in çizdirilmesi
+#### grafiƒüin √ßizdirilmesi
 plot(items, BDStats, ylim = c(0, 60), xaxt = "n", ylab = "BD", xlab = "Maddeler",
      col = ifelse(1:20 == 17, "red", "black"))
 axis(1, at = seq(1, 20))
 text(17, 54.88, "M17", cex = .8)
 
-## e€ilim testi istatisti€i (Penfield, 2003)
+## eƒüilim testi istatistiƒüi (Penfield, 2003)
 BDStats_Penfield <- difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, BDstat = "trend")
 
 ### orijinal grafik
 plot(difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, BDstat = "trend"))
 
 ### kitaptaki grafik
-#### x ve y eksenlerindeki de€erlerin belirlenmesi
+#### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 BDStats_p <- BDStats_Penfield$BD[, 1]
 items <- 1:20
-#### grafi€in çizdirilmesi
+#### grafiƒüin √ßizdirilmesi
 plot(items, BDStats_p, ylim = c(0, 30), xaxt = "n", ylab = "BD", xlab = "Maddeler",
      col = ifelse(1:20 == 7 | 1:20 == 10 | 1:20 == 17 | 1:20 == 18, "red", "black"))
 abline(h = 3.8415, col = "blue") 
@@ -94,15 +94,15 @@ text(10, 15.52, "M10", cex = .8)
 text(17, 29.51, "M17", cex = .8)
 text(18, 6.52, "M8", cex = .8)
 
-### Breslow-Day (Aguerri et vd., 2009) - saflaﬂt›rmal› & Breslow-Day (Penfield, 2003) - saflaﬂt›rmal›
+### Breslow-Day (Aguerri vd., 2009) - safla≈ütƒ±rmalƒ± & Breslow-Day (Penfield, 2003) - safla≈ütƒ±rmalƒ±
 
-#### Breslow-Day (Aguerri vd., 2009) - saflaﬂt›rmal›
+#### Breslow-Day (Aguerri vd., 2009) - safla≈ütƒ±rmalƒ±
 BDStats_Aguerri_IPP <- difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = TRUE)
 
 ##### orijinal grafik - Aguerri vd., 2009
 plot(difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = TRUE))
 
-#### Breslow-Day (Penfield, 2003) - saflaﬂt›rmal›
+#### Breslow-Day (Penfield, 2003) - safla≈ütƒ±rmalƒ±
 BDStats_Penfield_IPP <- difBD(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, BDstat = "trend", purify = TRUE)
 
 ##### orijinal grafik - Penfield, 2003
@@ -113,10 +113,10 @@ dev.new()
 par(mfrow = c(2, 1), mar = c(4, 4, 2, 2))
 
 ###### kitaptaki grafik - Aguerri vd. 2009
-####### x ve y eksenlerindeki de€erlerin belirlenmesi
+####### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 BDStatsIPP <- BDStats_Aguerri_IPP$BD[, 1]
 items <- 1:20
-####### grafi€in çizdirilmesi
+####### grafiƒüin √ßizdirilmesi
 plot(items, BDStatsIPP, ylim = c(0, 50), xaxt = "n", ylab = "BD", xlab = "Maddeler",
      col = ifelse(1:20 == 10 | 1:20 == 12 | 1:20 == 16 | 1:20 == 17, "red", "black"))
 axis(1, at = seq(1, 20))
@@ -127,10 +127,10 @@ text(17, 50.20, "M17", cex = .8)
 mtext("a)", side = 3, adj = 0, line = 0.3, cex = 1.2)
 
 ###### kitaptaki grafik - Penfield, 2003
-####### x ve y eksenlerindeki de€erlerin belirlenmesi
+####### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 BDStatsIPP_p <- BDStats_Penfield_IPP$BD[, 1]
 items <- 1:20
-####### grafi€in çizdirilmesi
+####### grafiƒüin √ßizdirilmesi
 plot(items, BDStatsIPP_p, ylim = c(0, 30), xaxt = "n", ylab = "BD", xlab = "Maddeler",
      col = ifelse(1:20 == 7 | 1:20 == 10 | 1:20 == 17 | 1:20 == 18, "red", "black"))
 abline(h = 3.8415, col = "blue")
@@ -148,10 +148,10 @@ StdStats <- difStd(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1)
 plot(difStd(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1))
 
 ## kitaptaki grafik
-### x ve y eksenlerindeki de€erlerin belirlenmesi
+### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 STDPDIF <- StdStats$PDIF 
 items <- 1:20
-### grafi€in çizdirilmesi
+### grafiƒüin √ßizdirilmesi
 plot(items, STDPDIF, ylim = c(-1, 1), xaxt="n", ylab = "STD P-DIF", xlab = "Maddeler",
      col = ifelse(1:20 == 2 | 1:20 == 16 | 1:20 == 18 | 1:20 == 19, "red", "black"))
 abline(h = -.1, col = "blue") 
@@ -162,17 +162,17 @@ text(16, .32, "M16", cex = .8)
 text(18, -.36, "M18", cex = .8)
 text(19, .41, "M19", cex = .8)
 
-## Standardization - saflaﬂt›rmal›
+## Standardization - safla≈ütƒ±rmalƒ±
 StdStats_Purify <- difStd(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = TRUE)
 
-### orijinal grafik - saflaﬂt›rmal›
+### orijinal grafik - safla≈ütƒ±rmalƒ±
 plot(difStd(Data = dataDIF[1:20], group = dataDIF$group1, focal.name = 1, purify = TRUE))
 
 ### kitaptaki grafik
-#### x ve y eksenlerindeki de€erlerin belirlenmesi
+#### x ve y eksenlerindeki deƒüerlerin belirlenmesi
 STDPDIF_IPP <- StdStats_Purify$PDIF 
 items <- 1:20
-#### grafi€in çizdirilmesi
+#### grafiƒüin √ßizdirilmesi
 plot(items, STDPDIF_IPP, ylim = c(-1, 1), xaxt = "n", ylab = "STD P-DIF", xlab = "Maddeler",
      col = ifelse(1:20 == 2 | 1:20 == 16 | 1:20 == 18 | 1:20 == 19, "red", "black"))
 abline(h = -.1, col = "blue") 
