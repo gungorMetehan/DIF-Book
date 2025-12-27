@@ -178,7 +178,8 @@ plot(items, STDPDIF_IPP, ylim = c(-1, 1), xaxt = "n", ylab = "STD P-DIF", xlab =
 abline(h = -.1, col = "blue") 
 abline(h = .1, col = "blue") 
 axis(1, at = seq(1, 20))
-text(2, -.33, "mM2", cex = .8)
+text(2, -.33, "M2", cex = .8)
 text(16, .30, "M6", cex = .8)
 text(18, -.35, "M18", cex = .8)
 text(19, .39, "M19", cex = .8)
+
