@@ -5,7 +5,7 @@ This repository contains the R scripts and dataset used in **Chapter 2**, *"DMF 
 The repository includes:
 
 1. `dataset/dataDIF.csv`
-   A simulated dataset consisting of dichotomous (0–1) responses from **1,000 individuals** to **20 items**. The columns **m1–m20** represent the test items, while **group1** and **group2** indicate the **reference group (0)** and the **focal group (1)**, respectively.
+   A simulated dataset consisting of dichotomous (0–1) responses from **1,000 individuals** to **20 items**.
 
 2. `dataset/dataset_info.md`
    Documentation describing the structure of the dataDIF dataset, including variable definitions, group coding, and item characteristics.
