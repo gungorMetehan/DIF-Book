@@ -12,3 +12,13 @@ The repository includes:
 
 3. `chapter2/chapter2_EN.R`
    An English translation of the Turkish R script, including translated comments and documentation, to make the analyses more accessible to an international audience.
+
+<p align = "center">
+  <a href = "https://pegem.net/urun/R-Uygulamalariyla-Degisen-Madde-Fonksiyonu-Analizleri-328103" target = "_blank">
+    <img
+      src = "https://github.com/user-attachments/assets/3a100d95-968d-4242-8f22-33900824e0b7"
+      alt = "R Uygulamalarıyla Değişen Madde Fonksiyonu Analizleri"
+      width = "300"
+    />
+  </a>
+</p>
