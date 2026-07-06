@@ -1,6 +1,6 @@
 # DIF-Book
 
-This repository contains the R scripts and dataset used in **Chapter 2**, *"DMF belirlemede MTK tabanlı olmayan öncü yöntemler [non-IRT-based pioneering methods in detecting DIF]"*, of the book **R Uygulamalarıyla Değişen Madde Fonksiyonu Analizleri [Differential item functioning analyses with R applications]**, edited by **Professor Dr. Ergül Demir**.
+This repository contains the R scripts and dataset used in **Chapter 2**, *"DMF Belirlemede MTK Tabanlı Olmayan Öncü Yöntemler [Non-IRT-Based Pioneering Methods in Detecting DIF]"*, of the book **R Uygulamalarıyla Değişen Madde Fonksiyonu Analizleri [Differential Item Functioning Analyses with R Applications]**, edited by **Professor Dr. Ergül Demir**.
 
 The repository includes:
 
