@@ -1,6 +1,6 @@
 # Dataset Info 
 
-The **dataDIF** dataset was generated specifically for this book using simulation methods. It contains responses to 20 test items from 1,000 participants. Of these participants, 700 were assigned to the reference group, while the remaining 300 were assigned to the focal group.
+The **dataDIF** dataset was generated specifically for this book using simulation methods. It contains responses to 20 test items from 1,000 participants. Of these participants, 700 were assigned to the reference group (ref), while the remaining 300 were assigned to the focal group (foc).
 
 The first 20 columns of the dataset (**m1–m20**) contain the dichotomous item responses (0 = incorrect, 1 = correct) of the 1,000 participants. The last two columns (**group1** and **group2**) indicate group membership, where **0** represents the reference group and **1** represents the focal group.
 
