@@ -16,6 +16,8 @@ The repository includes:
 4. `chapter2/chapter2_EN.R`
    An English translation of the Turkish R script, including translated comments and documentation, to make the analyses more accessible to an international audience.
 
+# About the Book
+
 <p align = "center">
   <a href = "https://pegem.net/urun/R-Uygulamalariyla-Degisen-Madde-Fonksiyonu-Analizleri-328103" target = "_blank">
     <img
@@ -25,3 +27,15 @@ The repository includes:
     />
   </a>
 </p>
+
+**ISBN:** 978-625-8789-37-9 | **First Edition:** July 2026, Ankara
+
+**Table of Contents**
+
+* Chapter 1: Fundamental Concepts of Differential Item Functioning (DIF) [Değişen Madde Fonksiyonu (DMF) Temel Kavramları]
+* Chapter 2: Non-IRT-Based Pioneering Methods in Detecting DIF [DMF Belirlemede MTK Tabanlı Olmayan Öncü Yöntemler]
+* Chapter 3: The Mantel–Haenszel Chi-Square Technique for Detecting DIF [DMF Belirlemede Mantel-Haenszel Ki-Kare Tekniği]
+* Chapter 4: Logistic Regression for Detecting DIF [DMF Belirlemede Lojistik Regresyon]
+* Chapter 5: SIBTEST for Detecting DIF [DMF Belirlemede SIBTEST]
+* Chapter 6: IRT-Based Methods for Detecting DIF [DMF Belirlemede MTK Tabanlı Yöntemler]
+* Chapter 7: Using Mixture Item Response Theory Models for Detecting DIF [DMF Belirlemede Karma Madde Tepki Kuramı Modellerinin Kullanılması]
