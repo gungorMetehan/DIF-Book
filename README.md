@@ -1,6 +1,6 @@
 # DIF-Book
 
-This repository contains the R scripts and dataset used in **Chapter 2**, *"DMF Belirlemede MTK Tabanlı Olmayan Öncü Yöntemler [Non-IRT-Based Pioneering Methods in Detecting DIF]"*, of the book **R Uygulamalarıyla Değişen Madde Fonksiyonu Analizleri [Differential Item Functioning Analyses with R Applications]**, edited by **Professor Dr. Ergül Demir**.
+This repository contains the R scripts and dataset used in **Chapter 2**, *"DMF Belirlemede MTK Tabanlı Olmayan Öncü Yöntemler [Pioneering Non-IRT-Based Methods for Detecting DIF]"*, of the book **R Uygulamalarıyla Değişen Madde Fonksiyonu Analizleri [Differential Item Functioning Analyses with R Applications]**, edited by **Professor Dr. Ergül Demir**.
 
 The repository includes:
 
@@ -33,12 +33,12 @@ The repository includes:
 **Table of Contents**
 
 * Chapter 1: Fundamental Concepts of Differential Item Functioning (DIF) [Değişen Madde Fonksiyonu (DMF) Temel Kavramları]
-* Chapter 2: Non-IRT-Based Pioneering Methods in Detecting DIF [DMF Belirlemede MTK Tabanlı Olmayan Öncü Yöntemler]
-* Chapter 3: The Mantel–Haenszel Chi-Square Technique for Detecting DIF [DMF Belirlemede Mantel-Haenszel Ki-Kare Tekniği]
+* Chapter 2: Pioneering Non-IRT-Based Methods for Detecting DIF [DMF Belirlemede MTK Tabanlı Olmayan Öncü Yöntemler]
+* Chapter 3: Mantel–Haenszel Chi-Square Technique for Detecting DIF [DMF Belirlemede Mantel-Haenszel Ki-Kare Tekniği]
 * Chapter 4: Logistic Regression for Detecting DIF [DMF Belirlemede Lojistik Regresyon]
 * Chapter 5: SIBTEST for Detecting DIF [DMF Belirlemede SIBTEST]
 * Chapter 6: IRT-Based Methods for Detecting DIF [DMF Belirlemede MTK Tabanlı Yöntemler]
 * Chapter 7: Using Mixture Item Response Theory Models for Detecting DIF [DMF Belirlemede Karma Madde Tepki Kuramı Modellerinin Kullanılması]
 
 # Citation
-* Güngör, M. (2026). DMF belirlemede MTK tabanlı olmayan öncü yöntemler [non-IRT-based pioneering methods in detecting DIF]. In E. Demir (Ed.), _R uygulamalarıyla değişen madde fonksiyonu analizleri_ [Differential item functioning analyses with R applications] (pp. 22-68). Pegem Akademi.
+* Güngör, M. (2026). DMF belirlemede MTK tabanlı olmayan öncü yöntemler [Pioneering non-IRT-based methods for detecting DIF]. In E. Demir (Ed.), _R uygulamalarıyla değişen madde fonksiyonu analizleri_ [Differential item functioning analyses with R applications] (pp. 22-68). Pegem Akademi.
