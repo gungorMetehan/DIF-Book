@@ -39,3 +39,6 @@ The repository includes:
 * Chapter 5: SIBTEST for Detecting DIF [DMF Belirlemede SIBTEST]
 * Chapter 6: IRT-Based Methods for Detecting DIF [DMF Belirlemede MTK Tabanlı Yöntemler]
 * Chapter 7: Using Mixture Item Response Theory Models for Detecting DIF [DMF Belirlemede Karma Madde Tepki Kuramı Modellerinin Kullanılması]
+
+# Citation
+* Güngör, M. (2026). DMF belirlemede MTK tabanlı olmayan öncü yöntemler [non-IRT-based pioneering methods in detecting DIF]. In E. Demir (Ed.), _R uygulamalarıyla değişen madde fonksiyonu analizleri_ [Differential item functioning analyses with R applications] (pp. 22-68). Pegem Akademi.
